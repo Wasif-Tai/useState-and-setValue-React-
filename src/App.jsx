@@ -1,6 +1,11 @@
 import { useState } from "react";
 import "./App.css";
 
+// useState is a hook
+// Hook is a function that can be used in functional component
+// useState return array, in the 0 index there is value and in index 1 there is function to update that value
+// when value is state updated, react rerenders the HTML and updated value is shown in the UI.
+
 function App() {
   let [counter, setCounter] = useState(0);
   let increment = () => setCounter(counter + 1);
